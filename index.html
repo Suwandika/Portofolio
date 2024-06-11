@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suwandika's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav class="fixed-navbar">
+            <img src="img//logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </nav>
+        <div class="header-text">
+            <p><span><b>Copywriter</b></span></p>
+            <h1>Halo, saya<span> Adi Suwandika</span><br>dari Indonesia</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/14. Adi.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+
+                    <h2>Deskripsi singkat</h2>
+                    <p>Saya sedang bersekolah di <b>SMKN 1 Denpasar</b>
+                        Saya mengambil jurusan Rekayasa Perangkat Lunak atau bisa disingkat dengan <b>RPL</b>
+                        Saya memilih jurusan ini karena bingung ingin memilih jurusan apa jika bersekolah di SMK, karena jurusan ini terlihat cukup menarik karena saya ingin mempelajari dunia IT</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Copywriting</span><br>Advertisement Writer</li>
+                            <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SD</span><br>SD Negeri 2 Dangin Puri</li>
+                            <li><span>SMP</span><br>SMP Negeri 8 Denpasar</li>
+                            <li><span>SMA/SMK</span><br>SMK Negeri 1 Denpasar</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="far fa-keyboard"></i>
+                <h2>Copywriter</h2>
+                <p>Saya menyediakan jasa untuk menulis iklan ataupun maupun sebuah tulisan caption postingan</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Saya menyediakan jasa untuk membuat desain dari sebuah website yang akan dibuat</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Saya menyediakan jasa untuk membuat atau membangun sebuah web atau aplikasi</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio------------>
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work portfolio-item">
+                <img src="img/WORLD CUP 123.png" alt="Logo Aplikasi" class="app-logo">
+                <h2>Aplikasi Piala Dunia</h2>
+                <p>Aplikasi yang menjelaskan sedikit mengenai piala dunia, serta berisi quiz tentang piala dunia yang dijelaskan pada aplikasi tersebut.</p>
+                <a href="Piala_Dunia2.apk" download>Unduh APK</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bx-envelope' ></i>Email: adisuwandika02@gmail.com</p>
+                <p><i class='bx bxs-phone-call'></i>Phone: 08989137405</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/suwandikaadi_07?igshid=YTQwZjQ0NmI0OA=="><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100070297356398&mibextid=9R9pXO"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2023 Suwandika's Portfolio.</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
